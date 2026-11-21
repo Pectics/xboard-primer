@@ -1,0 +1,31 @@
+{
+  "name": "Primer",
+  "description": "基于 GitHub Primer Design System 的 Xboard 用户端主题",
+  "images": "",
+  "configs": [
+    {
+      "label": "品牌标识配色",
+      "field_name": "theme_color",
+      "field_type": "select",
+      "select_options": {
+        "default": "默认",
+        "blue": "蓝色",
+        "black": "黑色",
+        "darkblue": "暗蓝色"
+      },
+      "default_value": "default"
+    },
+    {
+      "label": "登录页背景",
+      "placeholder": "输入背景图片 URL",
+      "field_name": "background_url",
+      "field_type": "input"
+    },
+    {
+      "label": "自定义页脚 HTML",
+      "placeholder": "例如客服组件的嵌入代码",
+      "field_name": "custom_html",
+      "field_type": "textarea"
+    }
+  ]
+}
