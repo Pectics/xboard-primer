@@ -1,0 +1,183 @@
+.portal-account,
+.account-stack,
+.account-form {
+  display: grid;
+  gap: var(--space-lg);
+  min-width: 0;
+}
+
+.portal-account > *,
+.account-columns > * {
+  min-width: 0;
+}
+
+.account-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.account-stack,
+.account-form {
+  align-content: start;
+}
+
+.account-actions,
+.account-pagination,
+.account-pagination label,
+.account-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.account-row,
+.account-pagination {
+  justify-content: space-between;
+}
+
+.account-end {
+  justify-content: flex-end;
+}
+
+.account-balances,
+.account-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--base-size-128), 100%), 1fr));
+  gap: var(--space-md);
+  margin: 0;
+}
+
+.account-balances {
+  margin-bottom: var(--space-lg);
+}
+
+.account-stats {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: var(--borderWidth-default) solid var(--borderColor-muted);
+}
+
+.account-balances dt,
+.account-stats dt,
+.account-amount span,
+.account-note,
+.account-rules {
+  color: var(--fgColor-muted);
+  font: var(--text-body-shorthand-small);
+}
+
+.account-balances dd,
+.account-stats dd {
+  margin: var(--space-xs) 0 0;
+  font-weight: var(--base-text-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+.account-balances dd,
+.account-amount strong {
+  font: var(--text-title-shorthand-medium);
+}
+
+.account-commission {
+  font: var(--text-title-shorthand-large);
+  font-variant-numeric: tabular-nums;
+}
+
+.account-amount {
+  display: grid;
+  gap: var(--space-xxs);
+}
+
+.account-rules {
+  display: grid;
+  gap: var(--space-xs);
+  margin-top: var(--space-lg);
+}
+
+.account-rules p {
+  margin: 0;
+}
+
+.account-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: var(--text-body-shorthand-medium);
+  font-variant-numeric: tabular-nums;
+}
+
+.account-table :is(th, td) {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: var(--borderWidth-default) solid var(--borderColor-muted);
+  text-align: start;
+}
+
+.account-table thead th {
+  background: var(--bgColor-muted);
+  color: var(--fgColor-muted);
+  font: var(--text-body-shorthand-small);
+  font-weight: var(--base-text-weight-semibold);
+  white-space: nowrap;
+}
+
+.account-table tbody th {
+  font-weight: var(--base-text-weight-medium);
+  overflow-wrap: anywhere;
+}
+
+.account-table tr > :last-child {
+  text-align: end;
+}
+
+.account-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.account-pagination {
+  margin-top: var(--space-md);
+  color: var(--fgColor-muted);
+  font: var(--text-body-shorthand-small);
+}
+
+.account-note {
+  margin: 0 0 var(--space-md);
+}
+
+.account-error {
+  margin: 0;
+  color: var(--fgColor-danger);
+  font: var(--text-body-shorthand-medium);
+}
+
+.account-table code,
+.account-command {
+  overflow-wrap: anywhere;
+  font: var(--text-codeBlock-shorthand);
+}
+
+.account-steps {
+  display: grid;
+  gap: var(--space-lg);
+  margin: 0;
+  padding-inline-start: var(--space-xl);
+}
+
+.account-command {
+  display: block;
+  margin: var(--space-sm) 0;
+  padding: var(--space-sm);
+  border-radius: var(--borderRadius-default);
+  background: var(--bgColor-muted);
+}
+
+@media (max-width: 767px) {
+  .account-columns { grid-template-columns: minmax(0, 1fr); }
+  .account-table :is(th, td) { padding-inline: var(--base-size-6); }
+}

@@ -1,0 +1,76 @@
+.portal-nodes {
+  display: grid;
+  gap: var(--space-lg);
+  min-width: 0;
+}
+
+.nodes-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.nodes-table {
+  border-collapse: collapse;
+  width: 100%;
+  font: var(--text-body-shorthand-medium);
+  text-align: start;
+}
+
+.nodes-table :is(th, td) {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: var(--borderWidth-default) solid var(--borderColor-muted);
+  text-align: start;
+}
+
+.nodes-table thead th {
+  background: var(--bgColor-muted);
+  color: var(--fgColor-muted);
+  font: var(--text-body-shorthand-small);
+  font-weight: var(--base-text-weight-semibold);
+  white-space: nowrap;
+}
+
+.nodes-table tbody th {
+  font-weight: var(--base-text-weight-semibold);
+  overflow-wrap: anywhere;
+}
+
+.nodes-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.nodes-protocol {
+  display: block;
+  color: var(--fgColor-muted);
+  font: var(--text-caption-shorthand);
+}
+
+.nodes-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.nodes-number,
+.nodes-traffic td {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.nodes-traffic :is(th, td):not(:first-child) {
+  text-align: end;
+}
+
+.nodes-table caption {
+  caption-side: bottom;
+  padding: var(--space-sm) var(--space-md) 0;
+  color: var(--fgColor-muted);
+  font: var(--text-body-shorthand-small);
+  text-align: start;
+}
+
+@media (max-width: 767px) {
+  .nodes-table :is(th, td) {
+    padding-inline: var(--base-size-6);
+  }
+}

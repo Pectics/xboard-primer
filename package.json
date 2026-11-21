@@ -1,0 +1,26 @@
+{
+  "name": "xboard-primer",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@primer/octicons-react": "19.42.0",
+    "@primer/primitives": "11.10.0",
+    "@primer/react": "38.46.0",
+    "dompurify": "3.4.18",
+    "marked": "18.2.1",
+    "qrcode.react": "4.2.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-is": "19.3.1"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.1",
+    "esbuild": "0.28.2",
+    "playwright": "1.62.1"
+  }
+}
