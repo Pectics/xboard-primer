@@ -8,7 +8,7 @@ const root = fileURLToPath(new URL('../', import.meta.url))
 const dist = join(root, 'dist')
 const config = JSON.parse(await readFile(join(root, 'theme/config.json'), 'utf8'))
 const {version} = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'))
-const archive = `${config.name}-v${version.replace(/\.0$/, '')}.zip`
+const archive = `${config.name}-v${version}.zip`
 await mkdir(dist, {recursive: true})
 const temp = await mkdtemp(join(dist, '.build-'))
 const theme = join(temp, config.name)
