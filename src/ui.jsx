@@ -86,7 +86,8 @@ export function Confirm({title, description, confirmLabel, onConfirm, onClose, d
       setPending(false)
     }
   }
-  return <Dialog title={title} role="alertdialog" width="large" onClose={() => !pending && onClose()}
+  return <Dialog title={title} role="alertdialog" width="large" className="confirm-dialog" onClose={() => !pending && onClose()}
+    renderBody={description || error ? undefined : () => null}
     footerButtons={[
       {content: t('取消'), buttonType: 'default', onClick: onClose, disabled: pending},
       {content: confirmLabel || t('确定'), buttonType: danger ? 'danger' : 'primary', onClick: confirm, disabled: pending},

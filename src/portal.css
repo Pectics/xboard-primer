@@ -56,6 +56,12 @@ main { min-inline-size: 0; }
 .section-stack, .dialog-stack { display: grid; gap: var(--space-lg); min-inline-size: 0; align-content: start; }
 .dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-sm); }
 .dialog-heading > div { min-inline-size: 0; padding: var(--base-size-6) var(--space-sm); overflow-wrap: anywhere; }
+.confirm-dialog > [data-component="ScrollableRegion"]:empty { display: none; }
+.confirm-dialog > [data-component="ScrollableRegion"]:empty + [data-component="Dialog.Footer"] {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  overflow-x: visible;
+}
 .empty-state { display: grid; justify-items: start; gap: var(--space-sm); padding-block: var(--space-md); }
 .empty-title { font-weight: var(--base-text-weight-semibold); }
 .empty-state .actions { margin-block-start: var(--space-xs); }
