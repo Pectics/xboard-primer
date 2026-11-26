@@ -56,10 +56,6 @@
   border: 0;
 }
 
-.portal-auth .TextInput-wrapper:has(> input[autocomplete="current-password"]) {
-  padding-block: 0;
-}
-
 .portal-auth-email,
 .portal-auth-code {
   display: grid;

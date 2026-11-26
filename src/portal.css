@@ -9,6 +9,7 @@ html[data-color-mode="dark"] { color-scheme: dark; }
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; font: var(--text-body-shorthand-medium); }
 button, input, select, textarea { font: inherit; }
+.TextInput-wrapper[data-component="TextInput"] { padding-block: 0; }
 button, a { touch-action: manipulation; }
 a { color: var(--fgColor-accent); }
 img { max-inline-size: 100%; }
