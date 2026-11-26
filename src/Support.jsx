@@ -331,7 +331,7 @@ function KnowledgeList({locale}) {
             <ul className="support-articles">
               {articles.map(item => (
                 <li key={item.id}>
-                  <Button block variant="invisible" leadingVisual={BookIcon} trailingVisual={ChevronRightIcon}
+                  <Button block alignContent="start" variant="invisible" leadingVisual={BookIcon} trailingVisual={ChevronRightIcon}
                     onClick={() => setArticle({id: item.id, title: item.title})}>
                     <span className="support-article-title">{item.title}</span>
                     <span className="support-updated">{t('最后更新: {date}', {date: dateTime(item.updated_at, locale)})}</span>

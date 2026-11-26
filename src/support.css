@@ -119,7 +119,6 @@
 .support-articles li + li { border-top: var(--borderWidth-default) solid var(--borderColor-muted); }
 
 .support-articles button {
-  justify-content: start;
   min-height: var(--base-size-44);
   height: auto;
   padding-block: var(--base-size-6);
