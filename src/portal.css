@@ -44,7 +44,7 @@ main { min-inline-size: 0; }
 .nav-section h2 { padding: 0 var(--space-sm) var(--space-xs); font: var(--text-body-shorthand-small); font-weight: var(--base-text-weight-medium); color: var(--fgColor-muted); }
 .site-nav a { min-block-size: var(--control-medium-size); display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) var(--space-sm); color: var(--fgColor-default); border-radius: var(--borderRadius-default); text-decoration: none; }
 .site-nav svg, .help-links svg { flex: none; color: var(--fgColor-muted); }
-.site-nav a:hover { background: var(--control-transparent-bgColor-hover); }
+.site-nav a:hover { background: var(--control-transparent-bgColor-hover); text-decoration: none; }
 .site-nav a[aria-current="page"] { background: var(--bgColor-neutral-muted); font-weight: var(--base-text-weight-semibold); }
 .page-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg); margin-block-end: var(--space-xl); }
 .page-heading h1 { font: var(--text-title-shorthand-medium); overflow-wrap: anywhere; }
