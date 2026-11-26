@@ -119,10 +119,17 @@
 .support-articles li + li { border-top: var(--borderWidth-default) solid var(--borderColor-muted); }
 
 .support-articles button {
+  min-width: 0;
   min-height: var(--base-size-44);
   height: auto;
   padding-block: var(--base-size-6);
   text-align: start;
+}
+
+.support-articles button > [data-component="buttonContent"] {
+  flex: 1;
+  min-width: 0;
+  grid-template-columns: min-content minmax(0, 1fr) min-content;
 }
 
 .support-article-title,
